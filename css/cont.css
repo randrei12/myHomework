@@ -1,0 +1,174 @@
+.mainDiv {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.loginDiv {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.registerDiv {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.bottomDiv {
+    background-color: rgb(54, 54, 54);
+    position: relative;
+    bottom: 0px;
+    height: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+input[type='email'], input[type='password'], input[type='text'] {
+    /* background-color: rgb(214, 214, 214);  */
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-radius: 5px 5px 0px 0px;
+    outline: none;
+    padding-left: 15px;
+    border-bottom: solid #00803793 2px;
+    font-size: 20px;
+}
+
+.submit {
+    border: none;
+    border-radius: inherit;
+    width: 30%;
+    height: 40px;
+    padding: 0;
+}
+.submit:hover {
+    cursor: pointer;
+    color:white;
+    background-color: #7cc29a;
+}
+
+/* cod telefon: */
+.mainDiv {
+    height: 75vh;
+}
+.loginDiv {
+    position: relative;
+    width: 90%;
+    border-radius: 15px;
+    height: 100%;
+}
+.registerDiv {
+    position: relative;
+    width: 90%;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.registerDiv input[type='email'], input[type='password'] {
+    width: 80%;
+}
+.registerDiv .submit {
+    width: 50%;
+}
+.loginDivBottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* cod telefon: */
+
+@media only screen and (min-width: 600px) { /* Tablete */
+    .mainDiv {
+        padding: 5px;
+        height: 75vh;
+    }
+    .loginDiv {
+        border: 1px solid rgb(214, 214, 214);
+        position: relative;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        border-radius: 15px;
+        height: 50%;
+    }
+    .loginDivBottom {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .registerDiv {
+        position: relative;
+        width: 90%;
+        border-radius: 15px;
+        height: 65%;
+    }
+    
+    .registerDiv input[type='email'], input[type='password'] {
+        width: 80%;
+    }
+    .registerDiv .submit {
+        width: 30%;
+    }
+}
+@media only screen and (min-width: 769px) { /* Desktop */
+    .mainDiv {
+        padding: 5px;
+        height: 75vh;
+    }
+    .loginDiv {
+        border: 1px solid rgb(214, 214, 214);
+        position: relative;
+        left: 30%;
+        right: 30%;
+        width: 40%;
+        border-radius: 15px;
+        height: 50%;
+    }
+    .loginDivBottom {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .registerDiv {
+        border: 1px solid rgb(214, 214, 214);
+        position: relative;
+        left: 30%;
+        right: 30%;
+        width: 40%;
+        border-radius: 15px;
+        height: 65%;
+    }
+    
+    .registerDiv input[type='email'], input[type='password'] {
+        width: 80%;
+    }
+    .registerDiv .submit {
+        width: 30%;
+    }
+} 
+
+.continueWith {
+    margin-top: 15px;
+}
+
+.ValidatorPar {
+    color: red;    
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}

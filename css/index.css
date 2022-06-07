@@ -1,0 +1,84 @@
+body {
+    overflow-x: hidden;
+}
+
+/* cod telefon: */
+.mainDiv {
+    padding: 0;
+    margin: 0;
+}
+.mainTopDiv{
+    height: 100%;
+    padding: 5px;
+
+    text-align: center;
+}
+.mainTopDiv h1{
+    font-size: 8vw;
+    color: white;
+}
+.mainTopDiv p{
+    color: white;
+}
+.mainTopPDiv p{
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+/* cod telefon: */
+
+@media only screen and (min-width: 600px) { /* Tablete */
+}
+@media only screen and (min-width: 769px) { /* Desktop */
+} 
+
+.noResults {
+    width: 100vw;
+    height: calc(100vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filtruMaterii {
+    position: absolute;
+    padding: auto 10%;
+    top: 20%;
+    width: 100%;
+    left: 5px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: visible;
+    z-index: 0;
+}
+
+#filtruMaterii button {
+    margin-left: 5px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    width: 160px;
+    height: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+}
+#filtruMaterii button:hover,  #filtruMaterii button:focus{
+    background-color: #dfdfdf;
+}
+
+#filtruMaterii .active {
+    background-color: #dfdfdf;
+}
+
+@media only screen and (min-width: 600px) { 
+    #filtruMaterii {
+        top: 10%;
+        height: 80%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+}

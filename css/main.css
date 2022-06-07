@@ -1,0 +1,321 @@
+button {
+    color: white;
+    border: none;
+    background-color: #00803793;
+    border-radius: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #003b1a93;
+}
+input[type='submit'] {
+    color: white;
+    border: none;
+    background-color: #00803793;
+    border-radius: 25px;
+}
+
+input[type='submit']:hover {
+    cursor: pointer;
+    background-color: #003b1a93;
+}
+input[type='button'] {
+    color: white;
+    border: none;
+    background-color: #00803793;
+    border-radius: 25px;
+}
+
+input[type='button']:hover {
+    cursor: pointer;
+    background-color: #003b1a93;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+}
+.topNav {
+    background-color: #7cc29a;
+    z-index: 1;
+}
+
+/* cod telefon: */
+.topNavLogo { 
+    --imgSize: 30vw;
+    width: var(--imgSize);
+    height: calc(var(--imgSize)/6.87);
+    cursor: pointer;
+}
+.topNavCategories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.topNavCategoriesLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topNav {
+    padding: 5px;
+}
+
+#ConnectButton {
+    width: 100%;
+    background-color: transparent;
+}
+
+#ConnectButton:hover {
+    background-color: #00803793;
+    cursor: pointer;
+}
+
+.connectDiv {
+    display: flex;
+    flex-direction: column;
+}
+.searchDiv {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0 15px 0 0;
+    justify-content: center;
+}
+.searchDiv input[type='search'] {
+    height: 100%;
+    margin-right: 5px;
+    border: none;
+    border-radius: 15px;
+    padding: 0 15px;
+}
+.searchDiv button {
+    background-color: transparent;
+}
+.searchDiv button:hover, .searchDiv button:focus{
+    background-color:#00803793;
+    border: none;
+}
+/* cod telefon: */
+
+@media only screen and (min-width: 600px) { /* Tablete */
+    .topNav {
+        padding: 10px 5px;
+    }
+    .topNavLogo {
+        --imgSize: 10vw;
+        width: var(--imgSize);
+        height: calc(var(--imgSize)/6.87);
+        text-align: center;
+    }
+    .topNavCategories {
+        display: flex;
+        flex-direction: row;
+    }
+    #topNavButton {
+        margin-left: 1vw;
+        height: 30px;
+    }
+    .topNavCategoriesLeft {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #ConnectButton {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 15px;
+        background-color: transparent;  
+        height: 100%;
+    }
+    /* .searchDiv input[type='submit'] {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 15px;
+        background-color: transparent;  
+        height: 100%;
+    } */
+    .connectDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+    }
+}
+@media only screen and (min-width: 769px) { /* Desktop */
+    .topNav {
+        padding: 10px 5px;
+    }
+    .topNavLogo {
+        --imgSize: 10vw;
+        width: var(--imgSize);
+        height: calc(var(--imgSize)/6.87);
+        text-align: center;
+    }
+    .topNavCategories {
+        display: flex;
+        flex-direction: row;
+    }
+    #topNavButton {
+        margin-left: 1vw;
+        height: 30px;
+    }
+    .topNavCategoriesLeft {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #ConnectButton {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 15px;
+        background-color: transparent;  
+        height: 100%;
+    }
+    /* .searchDiv input[type='submit'] {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 15px;
+        background-color: transparent;  
+        height: 100%;
+    } */
+    .connectDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+    }
+} 
+
+/* OBS: 6.87 este rezolutia (de atatea ori este mai mare width-ul decat height-ul) */
+
+
+#topNavButton {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+#topNavButton:hover {
+    color: white;
+    background-color: #00803793;
+    cursor: pointer;
+}
+.searchDiv input[type='submit']:hover {
+    color: white;
+    background-color: #00803793;
+    cursor: pointer;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 14px;
+    background-color: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    border: 3px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* continue with */
+
+.continueWith {
+    width: 200px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
+    border-radius: 7px;
+}
+
+.continueWith:hover {
+    opacity: 0.7;
+}
+
+.myAccount {
+    background-color: white;
+    background-image: url(/assests/ContWithMyAccount.png);
+    transition: background-color 100ms;
+}
+
+.myAccount:hover {
+    background-color: rgb(199, 199, 199);
+}

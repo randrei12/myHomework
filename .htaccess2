@@ -1,0 +1,13 @@
+# facem ca serverul sa accepte pagini fara exstensie (index.php -> index)
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L] 
+
+# trimite automat browser-ul catre pagina fara exstensie
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
+RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^/?(.*)$ /$1.php [L]
+
+# redirect pe pagina 404.php daca nu se gaseste documentul
+ErrorDocument 404 /php/404.php

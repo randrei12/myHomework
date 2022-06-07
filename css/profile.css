@@ -1,0 +1,147 @@
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.rightDiv {
+    background-color: rgb(199, 199, 199);
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+.rightDiv div button{
+    border-radius: 0;
+    background-color: transparent;
+    color: black;
+}
+.rightDiv .div2 {
+    background-color: white;
+    height:90%;
+}
+.active{
+    border-bottom: 2px solid #00803793;
+}
+.leftDiv {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 10px);
+    height: 100%;
+    padding: 5px;
+}
+.Info {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Info img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+
+.Info div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+h3 {
+    margin: 0;
+}
+.ActInfo {
+    border-top: 2px solid rgb(199, 199, 199);
+    height: 35%;
+    padding: 5px;
+}
+.ActInfo div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ActInfo div div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.actionCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.actionCenter button {
+    padding: 0 10px;
+    width: 5vw;
+    height: 4vh;
+}
+/* cod telefon: */
+.ActInfo h2 {
+    font-size: 5vw;
+}
+.actionCenter button {
+    width: 30vw;
+    height: 4vh;
+}
+/* cod telefon: */
+
+@media only screen and (min-width: 600px) { /* Tablete */
+    .ActInfo h2 {
+        font-size: 5vw;
+    }
+    .Info img {
+        width: 20vw;
+        height: 20vw;
+    }
+    .actionCenter {
+        flex-direction: row;
+    }
+    .actionCenter button {
+        width: 30vw;
+    }
+}
+@media only screen and (min-width: 769px) { /* Desktop */
+    .ActInfo h2 {
+        font-size: 1vw;
+    }
+    .mainDiv {
+        flex-direction: row;
+    }
+    body {
+        overflow: hidden;
+    }
+    .leftDiv {
+        width: 20%;
+    }
+    .rightDiv {
+        width: 80%;
+    }
+    .Info img {
+        width: 5vw;
+        height: 5vw;
+    }
+    .actionCenter {
+        flex-direction: row;
+    }
+    .actionCenter button {
+        width: 6vw;
+    }
+
+} 
+
+.aboutInfo {
+    padding: 5px;
+    border-top: 2px solid rgb(199, 199, 199);
+}
