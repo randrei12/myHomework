@@ -1,3 +1,3 @@
 # myHomework
 
-Old project unfinished, some features are buggy but it can be fixed very easily. I abandoned due the fact that I lost my motivation to contiune this project.
+Unfinished old project. Some features are buggy but they can be fixed easily. I abandoned due the fact that I lost motivation to contiune working on this project.
